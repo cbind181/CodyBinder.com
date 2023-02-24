@@ -1,0 +1,16 @@
+html * {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2%;
+}
+
+body {
+  background-color: #f0563e;
+}
+
+a {
+  color: #3ed8f0;
+}
+
+.layout {
+  display: flex;
+}
