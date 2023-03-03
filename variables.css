@@ -1,6 +1,6 @@
 html * {
   font-family: Arial, Helvetica, sans-serif;
-  padding: 2%;
+  padding: 1%;
 }
 
 body {
@@ -8,9 +8,31 @@ body {
 }
 
 a {
-  color: #3ed8f0;
+  color: rgb(245, 244, 243);
+}
+
+table {
+  border-collapse: collapse;
+  border-color: black;
+  width: 70%;
+  margin: 1%;;
+}
+
+table, th, td {
+  border: .1em solid;
+  padding: 1%;
+  padding-left: 3%;;
+}
+
+th, td {
+  width: 50%;
 }
 
 .layout {
   display: flex;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
