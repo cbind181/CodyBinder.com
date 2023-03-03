@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cody Binder.com - Feedback</title>
+    <link rel="stylesheet" href="../../variables.css">
+    <link rel="stylesheet" href="feedback.css">
+    <script src="../../scripts/feedbackFormValidate.js"></script>
+    <script>
+      function countWords() {
+          var text = document
+              .getElementById("message").value;
+
+          var numWords = 0;
+ 
+          for (var i = 0; i < text.length; i++) {
+              var currentCharacter = text[i];
+              if (currentCharacter == " ") {
+                  numWords += 1;
+              }
+          }
+          numWords += 1;
+
+          alert("Message Word Count: " + numWords)
+      }
+  </script>
+  </head>
+  <body>
+
+    <!--#include virtual="../../components/header/header.html"-->
+
+    <h1>Feedback</h1>
+    <p>
+      How do you think I did? Fill out the form below and let me know!
+    </p>
+
+      <form id="feedbackForm" onsubmit="feedbackFormValidate(); countWords();">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="comments">Comments:</label><br>
+        <textarea name="message" id="message" rows="6" cols="30"></textarea> <br>
+        <label>Rating:</label>
+        <input type="radio" id="1star" name="rating">
+        <label for="1star">1 star</label>
+        <input type="radio" id="2star" name="rating">
+        <label for="2star">2 stars</label>
+        <input type="radio" id="3stars" name="rating">
+        <label for="3stars">3 stars</label>
+        <input type="radio" id="4stars" name="rating">
+        <label for="4star">4 stars</label>
+        <input type="radio" id="5stars" name="rating">
+        <label for="5stars">5 stars</label> <br>
+        <input type="checkbox" id="robot" name="robot" value="Robot">
+        <label for="robot">I might be a robot</label> <br>
+        <input type="submit" value="Send Feedback"> <br>
+        <input type="reset" value="Reset Form">
+      </form>
+
+      <!--#include virtual="../../components/footer/footer.html"-->
+
+  </body>
+</html>
