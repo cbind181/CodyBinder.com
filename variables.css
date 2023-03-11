@@ -7,6 +7,11 @@ body {
   background-color: #f0563e;
 }
 
+.theme-toggle {
+  background-color: grey;
+  color: white;
+}
+
 a {
   color: rgb(245, 244, 243);
 }
