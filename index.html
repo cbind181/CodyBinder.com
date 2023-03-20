@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cody Binder.com - Home</title>
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <script>
+      function themeToggle() {
+        var elem = document.body;
+        elem.classList.toggle("theme-toggle");
+      }
+    </script>
+  </head>
+  <body>
+  
+    <div class="bar">
+      <ul class="header">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="pages/about/about.html">About</a></li>
+        <li><a href="pages/contact/contact.html">Contact</a></li>
+        <li><a href="pages/feedback/feedback.html">Feedback</a></li>
+      </ul>
+
+      <form id="theme" onsubmit="themeToggle()">
+        <label for="theme">Select a theme</label>
+        <select>
+          <option value="normal">Normal</option>
+          <option value="toggle">Toggle</option>
+        </select>
+        <input type="submit" value="submit">
+      </form>
+    </div>
+
+    <div class="layout">
+      <h1><a href="pages/about/about.html">About</a></h1>
+
+      <p style="width: 42%">
+        Hi, I'm Cody! I'm a Software Engineer with a knack for
+        several fields of tech, including cybersecurity, networking,
+        systems administration, and, of course, software solutions engineering.
+      </p>
+
+      <h1><a href="pages/contact/contact.html">Contact</a></h1>
+      <p>
+        Want to get in touch?
+      </p>
+  </div>
+
+  <p class="footer">Copyright CodyBinder.com 2023 &copy;</p>
+
+  </body>
+</html>
